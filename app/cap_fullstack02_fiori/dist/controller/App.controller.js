@@ -1,0 +1,1 @@
+sap.ui.define(["sap/ui/core/mvc/Controller"],function(i){"use strict";return i.extend("capfullstack02fiori.capfullstack02fiori.controller.App",{onInit(){}})});

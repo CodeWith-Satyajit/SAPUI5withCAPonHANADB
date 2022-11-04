@@ -1,0 +1,47 @@
+<mvc:View controllerName="capfullstack02fiori.capfullstack02fiori.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns:m="sap.m" xmlns="sap.ui.table">
+    <m:Page id="page" title="{i18n>title}">
+        <m:content>
+         <Table enableCellFilter="true"  visibleRowCount="15" id="idTabel01" rows="{textModel>/}" selectionMode="Single">
+                <columns>
+                    <Column id="c1" width="25%">
+                        <m:Label text="Material Number" id="l1"/>
+                        <template>
+                            <m:Text text="{textModel>MaterialNumber}" id="t1"/>
+                        </template>
+                    </Column>
+                    <Column width="50%" id="c2">
+                        <m:Label text="Material Name" id="l2"/>
+                        <template>
+                            <m:Text text="{textModel>MaterialName}" id="t2"/>
+                        </template>
+                    </Column>
+                    <Column width="25%" id="c3">
+                        <m:Label text="Units in Stock" id="l3"/>
+                        <template>
+                            <m:Text text="{textModel>UnitsInStock}" id="t3"/>
+                        </template>
+                    </Column>
+                     <Column width="25%" id="c4">
+                        <m:Label text="Available" id="l5"/>
+                        <template>
+                            <m:Text text="{textModel>IsAvailable}" id="t4"/>
+                        </template>
+                    </Column>
+                </columns>
+            </Table>
+        
+        </m:content>
+        <m:customHeader>
+        <m:Toolbar width="100%" id="toolbar1">
+            <m:content>
+                <Button xmlns="sap.m" text="Create" id="button1" press="create"/>
+                <Button xmlns="sap.m" text="Read" id="button4" press="read"/>
+                <Button xmlns="sap.m" text="Update" id="button2" press="update"/>
+                <Button xmlns="sap.m" text="Delete" id="button3" press="delete"/>
+            </m:content>
+        </m:Toolbar>
+    </m:customHeader>
+    </m:Page>
+</mvc:View>

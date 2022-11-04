@@ -1,0 +1,1 @@
+using Main as service from '../../srv/service';

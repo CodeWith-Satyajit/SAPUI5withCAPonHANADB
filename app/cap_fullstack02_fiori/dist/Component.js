@@ -1,0 +1,1 @@
+sap.ui.define(["sap/ui/core/UIComponent","sap/ui/Device","capfullstack02fiori/capfullstack02fiori/model/models"],function(i,e,t){"use strict";return i.extend("capfullstack02fiori.capfullstack02fiori.Component",{metadata:{manifest:"json"},init:function(){i.prototype.init.apply(this,arguments);this.getRouter().initialize();this.setModel(t.createDeviceModel(),"device")}})});
